@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sucursales>
+  <sucursal codigo="01">
+    <nombre> FitnessUAI </nombre>
+    <direccion>Ituzaingo</direccion>
+    <telefono> 1132453254 </telefono>
+  </sucursal>
+  <sucursal codigo="02">
+    <nombre> FitnessUAI </nombre>
+    <direccion>Padua</direccion>
+    <telefono> 5465425434 </telefono>
+  </sucursal>
+  <sucursal codigo="03">
+    <nombre> FitnessUAI </nombre>
+    <direccion>Moron</direccion>
+    <telefono> 1187652345 </telefono>
+  </sucursal>
+  <sucursal codigo="04">
+    <nombre> FitnessUAI </nombre>
+    <direccion>CABA</direccion>
+    <telefono> 1186782345 </telefono>
+  </sucursal>
+</sucursales>

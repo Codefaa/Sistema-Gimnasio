@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{375346CA-ECC6-4771-BAFA-753161B7488E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Presentacion_UI</RootNamespace>
+    <AssemblyName>Presentacion UI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmActividad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActividad.Designer.cs">
+      <DependentUpon>frmActividad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInforme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInforme.Designer.cs">
+      <DependentUpon>frmInforme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInformeChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInformeChart.Designer.cs">
+      <DependentUpon>frmInformeChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProfesor.Designer.cs">
+      <DependentUpon>frmProfesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSocio.Designer.cs">
+      <DependentUpon>frmSocio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSocioActividad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSocioActividad.Designer.cs">
+      <DependentUpon>frmSocioActividad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSucursal.Designer.cs">
+      <DependentUpon>frmSucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SueldoMaximo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SueldoMaximo.Designer.cs">
+      <DependentUpon>SueldoMaximo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrecioMaximo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PrecioMaximo.Designer.cs">
+      <DependentUpon>PrecioMaximo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmActividad.resx">
+      <DependentUpon>frmActividad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInforme.resx">
+      <DependentUpon>frmInforme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInformeChart.resx">
+      <DependentUpon>frmInformeChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProfesor.resx">
+      <DependentUpon>frmProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSocio.resx">
+      <DependentUpon>frmSocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSocioActividad.resx">
+      <DependentUpon>frmSocioActividad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSucursal.resx">
+      <DependentUpon>frmSucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrecioMaximo.resx">
+      <DependentUpon>PrecioMaximo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SueldoMaximo.resx">
+      <DependentUpon>SueldoMaximo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidad BE\Entidad BE.csproj">
+      <Project>{53ac3f62-48c0-49f9-a97e-4bdbce5b0bf3}</Project>
+      <Name>Entidad BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio BLL\Negocio BLL.csproj">
+      <Project>{950c6096-1e51-4847-a456-f8691ee725fb}</Project>
+      <Name>Negocio BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Seguridad\Seguridad.csproj">
+      <Project>{d8818319-a2d9-428d-a4ac-8d3fc061480a}</Project>
+      <Name>Seguridad</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
